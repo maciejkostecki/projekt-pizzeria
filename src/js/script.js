@@ -339,7 +339,7 @@
       console.log('generatedDOM: ', generatedDOM);
 
       /* append to cart */
-      document.querySelector(select.cart.productList).innerHTML = generatedDOM; //
+      document.querySelector(select.cart.productList).appendChild(generatedDOM);
       console.log('dom.productlist: ', thisCart.dom.productList);
     }
 
