@@ -344,10 +344,9 @@
       const url = settings.db.url + '/' + settings.db.order;
 
       const payload = {
-        address: 'test',
+        address: thisCart.dom.address.value,
         totalPrice: thisCart.totalPrice,
-        phone: thisCart.dom.formPhone,
-        email: thisCart.dom.formEmail,
+        phone: thisCart.dom.phone.value,
         subtotalPrice: thisCart.subtotalPrice,
         totalNumber: thisCart.totalNumber,
         deliveryFee: thisCart.deliveryFee,
@@ -387,9 +386,9 @@
       thisCart.dom.toggleTrigger = thisCart.dom.wrapper.querySelector(select.cart.toggleTrigger);
       thisCart.dom.productList = thisCart.dom.wrapper.querySelector(select.cart.productList);
       thisCart.dom.form = thisCart.dom.wrapper.querySelector(select.cart.form);
-      thisCart.dom.formPhone = thisCart.dom.wrapper.querySelector(select.cart.formPhone);
-      thisCart.dom.formEmail = thisCart.dom.wrapper.querySelector(select.cart.formEmail);
-      
+      thisCart.dom.phone = thisCart.dom.wrapper.querySelector(select.cart.phone);
+      thisCart.dom.address = thisCart.dom.wrapper.querySelector(select.cart.address);
+      console.log('email: ', thisCart.dom.formEmail);
 
       thisCart.renderTotalsKeys = ['totalNumber', 'totalPrice', 'subtotalPrice', 'deliveryFee'];
 
